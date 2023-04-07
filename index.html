@@ -2,13 +2,75 @@
 <html lang="en">
     <head>
         <meta charset-"utf-8">
+        <meta name="viewport" content="width=device-width" />
         <title>xavieruxchamp.github.io</title>
+        <link rel="stylesheet" type="text/css" href="./css/portfolio.css">
     </head>
     <body>
 
-        <div>
-            <h1>Final Project (WIP)</h1>
-            <video autoplay muted loop> <source src="./FullSizeRender.MP4" type="video/mp4"> </video>
+        <!--Navbar-->
+        <!-- old -->
+   
+        
+    <!--Navbar-->
+
+            
+            <div class="Navbar"></div>
+            <a class="active" href="#home">Home</a>
+
+            <button class="button" onclick="location.href='#Home'">Home</button>
+
+            <button class="button" onclick="location.href='#About'">About</button>
+            
+            <button class="button" onclick="location.href='#GitHub'">GitHub</button>
+            
+            <button class="button" onclick="location.href='#Contact'">Contact</button>
+            </body>
+
+        <!--Background video-->
+        <div id="Home">
+            <video autoplay muted loop id="Porsche">
+                <source src="images/video/porsche-spyder-28039.mp4" type="video/mp4">
+                <!--Displa
+                    y message if video fails to run-->
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+
+        <!--About section-->
+        <div class="Row" id="About">
+            <!--Left column-->
+            <div class="Column_2">
+                <img src="images/audi-1889698_960_720.png" alt="Replace with your own image and description">
+            </div>
+            <!--Right column-->
+            <div class="Column_1">
+                <h1>Background</h1>
+                <p>
+                    I have been involved with software development projects for a while now. Throughout my career, I have remained curious about new tools and frameworks. During my travels, I love experiencing new technical solutions in different environments.
+                    <br>
+                    <br>I am a graduate of <a href="https://www.academyoflearning.com/programs/british-columbia/software-and-web-developer/" target="_blank">Academy of Learnin Career College</a>’s Software and Web Developer Diploma, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, C#, Python, and more. 
+                    <br>
+                    <br>I am a full-stack developer and would love to work with you on your project. <a href="#Contact">Contact</a> me below!
+                </p>
+            </div>
+        </div>
+
+        <!--GitHub section-->
+        <div class="Row" id="GitHub">
+            <!--Left column-->
+            <div class="Column_1">
+                <h1>GitHub</h1>
+                <p>
+                    For a sample of my current projects, please go to my page on GitHub:
+                    <br>
+                    <p class="center"><a href="https://github.com/xavieruxchamp" target="_blank">GitHub.com/xavieruxchamp</a></p>
+                </p>
+            </div>
+            <!--Right column-->
+            <div class="Column_2">
+                <a href="https://github.com/xavieruxchamp" target="_blank"><img src="images/GitHub.png" alt="GitHub Logo"></a>
+            </div>
         </div>
 
     </body>
