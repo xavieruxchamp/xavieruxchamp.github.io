@@ -6,14 +6,14 @@
 
 /* Nav bar */
 
-.navbar
+.navbar {
 padding: 15px 25px;
 font-size: 24px;
 text-align: center;
 cursor: pointer;
 outline: none;
 color: #fb5592;
-background-color: #fff;
+background-color: #fb5592;
 border: none;
 border-radius: 15px;
 box-shadow: 0 9px #999;
@@ -31,6 +31,7 @@ transform: translateY(4px);
 /* Center class - this applies to all elements with the class "center" */
 .center {
     text-align: center; /* This center aligns the text */
+    background-color: #fff;
 }
 
 /* Center class hover effect - This only affects the quote, github link, and footer */
@@ -54,7 +55,7 @@ transform: translateY(4px);
 
 /* Screens that are 576px and smaller will not display the background video */
 @media screen and (max-width: 576px) {
-    #TPorsche {
+    #Porsche {
         display: none;
     }
 }
@@ -63,8 +64,7 @@ transform: translateY(4px);
 
 .neonText {
     color: deeppink;
-    font-size: 500%;
-    background-color: #2f3742;
+    font-size: 250%;
     text-shadow:
         0 0 7px #fff,
         0 0 10px #fff,
@@ -130,6 +130,8 @@ transform: translateY(4px);
     height: 450px;
 }
 
+
+
 /* This inserts something after the content of selected elements (in this case the elements with class "Row") */
 .Row:after {
 	content: ""; /* By leaving this blank, we are allowing the footer (covered lower down) to be displayed - removing it makes the footer overwrite a column */
@@ -151,7 +153,7 @@ img {
 img:hover {
 	filter: grayscale(5%);  /* Brings back most of the image's color when hovered over */
     transition: transform 1s; /* Transition lasts 1 second */
-	transform: scale(1.5); /* Image is increased slightly when hovered over */
+	transform: scale(1.1); /* Image is increased slightly when hovered over */
 }
 
 /* The @media rule is used in media queries to apply different styles for different media/types of devices */
