@@ -138,8 +138,7 @@ transform: translateY(4px);
 }
 /***** END OF TABLE STYLING *****/
 
-img {
-    
+img {  
     border-radius: 10px 100px; /* Gives all images slightly rounded corners */
     max-width: 100%; /* Ensures all images stay within the width of their container */
     height: 340px; /* Sets the height of all images */
