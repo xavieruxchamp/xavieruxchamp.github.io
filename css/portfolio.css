@@ -31,7 +31,7 @@ transform: translateY(4px);
 /* Center class - this applies to all elements with the class "center" */
 .center {
     text-align: center; /* This center aligns the text */
-    background-color: #fff;
+    background-color: darkorange;
 }
 
 /* Center class hover effect - This only affects the quote, github link, and footer */
@@ -74,7 +74,9 @@ transform: translateY(4px);
         0 0 92px #0fa,
         0 0 102px #0fa,
         0 0 151px #0fa;
-  }
+	
+}
+
 
 .Video_Text {
     background: rgba(0, 0, 0, 0.5); /* This provides a semi-transparent background for the text to sit over */
@@ -106,6 +108,11 @@ transform: translateY(4px);
     padding-top: 3%; /* This ensures there is space between the top of the column and our headings */
     height: 400px; /* This sets the height of the column to 400px -  this may need to be adjusted depending on the text you enter */
     background-color: #f2f2f2; /* Sets the background color of the columns with class Column_1 */
+}
+
+.Column_1:hover {
+    transition: transform 2s; /* This makes the transform effect last 2 seconds */
+    transform: scale(1.1); /* This makes the elements with class "center" increase in size by 1.1 when hovered over */
 }
 
 /* Screens 576px and smaller will display a scroll bar if the text overflows the column height */
@@ -163,4 +170,32 @@ img:hover {
         height: 100px;
         margin-top: 150px;
     }
+}
+
+form {
+    font-weight: bold;
+}
+
+.info-req {
+    text-align: center;
+    background-color: aquamarine;
+    /* align-items: center; */
+    width: 100%;
+}
+
+input[type=text] {
+    width: 25%; /* Each input box covers the full width of the container */
+    padding: 12px; /* Adds padding within the text box */
+    border: 1px solid #ccc; /* Setting a solid border and its color */
+    border-radius: 4px; /* Slightly rounds the corners of the text box border */
+    box-sizing: border-box; /* This creates a box with a border around the contact form input boxes */
+    margin-top: 6px; /* Adds a margin to the top of the text box */
+    margin-bottom: 16px; /* Adds a margin to the bottom of the text box */
+    resize: vertical; /* This allows the user to resize the text boxes vertically */
+    /* font-family: Perpetua, Rockwell Extra Bold;*/
+}
+
+/* Hover effects for input boxes */
+input[type=text]:hover {
+    box-shadow: 0 0 5px #00004d inset; /* This creates a blue shadow in the text box when hovered over by the user */
 }
