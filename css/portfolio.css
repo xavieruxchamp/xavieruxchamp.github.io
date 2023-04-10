@@ -1,11 +1,10 @@
-:root {
-    /* ↓ Now (almost) all elements display a vardana font */
+.root {
+    /* Setting vardana as the global font */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: gray
   }
 
 /* Nav bar */
-
 .navbar {
 padding: 15px 25px;
 font-size: 24px;
@@ -27,21 +26,17 @@ box-shadow: 0 5px #666;
 transform: translateY(4px);
 }
 
-
 /* Center class - this applies to all elements with the class "center" */
 .center {
     text-align: center; /* This center aligns the text */
     background-color: darkorange;
 }
 
-/* Center class hover effect - This only affects the quote, github link, and footer */
+/* Center class hover effect - This only affects the quote and the github link. */
 .center:hover {
     transition: transform 2s; /* This makes the transform effect last 2 seconds */
     transform: scale(1.1); /* This makes the elements with class "center" increase in size by 1.1 when hovered over */
 }
-
-
-
 
 /***** VIDEO STYLING *****/
 /* Formatting for background video */
@@ -64,7 +59,7 @@ transform: translateY(4px);
 
 .neonText {
     color: deeppink;
-    font-size: 250%;
+    font-size: 200%;
     text-shadow:
         0 0 7px #fff,
         0 0 10px #fff,
@@ -101,7 +96,7 @@ transform: translateY(4px);
     box-sizing: border-box; /* This creates a box with a border within which we will place most of our text */
 } 
 
-.Column_1 {
+.col_right {
     float: left;
     width: 50%; /* This ensures the column takes up half of the page width */
     padding: 10px;
@@ -110,19 +105,19 @@ transform: translateY(4px);
     background-color: #f2f2f2; /* Sets the background color of the columns with class Column_1 */
 }
 
-.Column_1:hover {
+.col_right:hover {
     transition: transform 2s; /* This makes the transform effect last 2 seconds */
     transform: scale(1.1); /* This makes the elements with class "center" increase in size by 1.1 when hovered over */
 }
 
 /* Screens 576px and smaller will display a scroll bar if the text overflows the column height */
 @media screen and (max-width: 576px) {
-    .Column_1 {
+    .col_right {
         overflow: auto;
     }
 }
 
-.Column_2 {
+.col_left {
     float: left;
     width: 50%;
     padding: 10px;
@@ -160,7 +155,8 @@ img {
 img:hover {
 	filter: grayscale(5%);  /* Brings back most of the image's color when hovered over */
     transition: transform 1s; /* Transition lasts 1 second */
-	transform: scale(1.1); /* Image is increased slightly when hovered over */
+	transform: rotate(-360deg);
+    /* transform: scale(1.1); /* Image is increased slightly when hovered over */
 }
 
 /* The @media rule is used in media queries to apply different styles for different media/types of devices */
